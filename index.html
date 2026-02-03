@@ -143,16 +143,16 @@ video{
   <h1>🎉 Quiz Result 🎉</h1>
   <h2 id="scoreText"></h2>
   <p>You already won my heart 😘</p>
- <img src="kiss.gif" width="70%">
-  <button class="yes" onclick="goPage(5)">Next 💕</button>
+  <img src="kiss.gif" width="70%">
+  <button class="yes" onclick="goPage(5)">Continue 💌💕</button>
 </div>
 
 <!-- PAGE 5 SURPRISE INTRO -->
 <div class="container" id="page5">
-  <h1>💌 Asalina Surprise Eppudu Undhi Nanna 💌</h1>
+  <h1>💌 Asalina Surprise Eppudu Undhi 💌</h1>
   <p> 💕 With Lots of love  💕  
      Heart beats faster now 😍</p>
- <img src="surprise.gif" width="65%">
+<img src="surprise.gif" width="70%">
   <button class="yes" onclick="goPage(6)">Open Surprise 🎁</button>
 </div>
 
@@ -162,9 +162,29 @@ video{
   <video controls>
     <source src="valentine.mp4" type="video/mp4">
   </video>
- <img src="heart.gif" width="50%">
+   <img src="heart.gif" width="70%">
+   <button class="yes" onclick="goPage(7)">Tap here ❤️</button>
 </div>
+<!-- PAGE 7 VIDEO -->
+<div class="container" id="page7">
+  <h3>Ippati varaku nuvvu chusina prathi page lo
+naa smile undhi,
+naa memories unnayi,
+naa prema undhi….
 
+Distance unna, time lekapoyina,
+ups & downs unna…
+naa choice matram okkate, 
+
+Nuvve.
+Eppatiki.
+Forever. 💍❤️❤️</h3>
+<h1>
+My heart is yours 💖✨</h1>
+<button class="yes" onclick="goPage(8)">Finaly❤️👉</button>
+</div>
+<div class="container" id="page8">
+  <img src="tq.gif" width="100%"></div>
 <script>
 document.getElementById("noBtn").addEventListener("mouseover",()=>{
   document.getElementById("noBtn").style.pointerEvents="none";
@@ -183,9 +203,9 @@ function heartsFlow(){
     h.innerHTML=Math.random()>0.5?"❤️":"🎈";
     h.style.left=Math.random()*100+"vw";
     document.body.appendChild(h);
-    setTimeout(()=>h.remove(),5000);
+    setTimeout(()=>h.remove(),3000);
   },250);
-  setTimeout(()=>clearInterval(interval),5000);
+  setTimeout(()=>clearInterval(interval),2000);
 }
 
 function submitQuiz(){
